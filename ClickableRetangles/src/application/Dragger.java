@@ -1,26 +1,20 @@
 package application;
 
 public class Dragger {
-	double initialX, initialY;
-	
-	public Dragger(double x, double y) {
-		initialX = x;
-		initialY = y;
-	}
+    private double offsetX;
+    private double offsetY;
 
-	public double getInitialX() {
-		return initialX;
-	}
+    public void setOffset(double offsetX, double offsetY) {
+        this.offsetX = offsetX;
+        this.offsetY = offsetY;
+    }
 
-	public void setInitialX(double initialX) {
-		this.initialX = initialX;
-	}
+    public double getOffsetX() {
+        return offsetX;
+    }
 
-	public double getInitialY() {
-		return initialY;
-	}
-
-	public void setInitialY(double initialY) {
-		this.initialY = initialY;
-	}
+    public double getOffsetY() {
+        return offsetY;
+    }
 }
+
